@@ -91,11 +91,8 @@ nav ul li a:hover::before {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: 10px;
+        height:fit-content;
     }
-
-    .gallery-div img {
-        width: 45%;
-        height: 60%;
 }
 /* Hide menu toggle button on larger screens */
 .menu-toggle {
