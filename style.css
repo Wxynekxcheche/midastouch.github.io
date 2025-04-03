@@ -61,7 +61,6 @@ nav ul li a:hover::before {
     height: 45px;
 }
 
-/* Ensure Gallery section adapts well on mobile */
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -99,6 +98,7 @@ nav ul li a:hover::before {
         height: 120px;
     }
 }
+
 /* Hide menu toggle button on larger screens */
 .menu-toggle {
     display: none; /* Hide by default */
@@ -182,7 +182,7 @@ section {
 
 .gallery-section {
     text-align: center;
-    height: 450px;
+    height: 500px;
 }
 
 h2{
@@ -200,7 +200,7 @@ h2{
 
 .gallery-div img {
     width: 10%;
-    height: 200px;
+    height: 150px;
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s;
