@@ -61,35 +61,26 @@ nav ul li a:hover::before {
     height: 45px;
 }
 
+/* Ensure Gallery section adapts well on mobile */
 @media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.9);
-        text-align: center;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-
-    .main {
-        flex-direction: column;
-        text-align: center;
+    .gallery-section {
+        height: auto; /* Allow it to expand naturally */
+        padding-bottom: 50px;
     }
 
     .gallery-div {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-div img {
+        width: 45%; /* Adjust image size for better layout */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .contact-us {
+        margin-top: 20px; /* Add spacing between sections */
+        padding: 40px 5%;
     }
 }
 
