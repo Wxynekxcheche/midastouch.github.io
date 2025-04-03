@@ -93,6 +93,11 @@ nav ul li a:hover::before {
         gap: 10px;
         height:fit-content;
     }
+
+    .gallery-div img {
+        width: 40%;
+        height: 120px;
+    }
 }
 /* Hide menu toggle button on larger screens */
 .menu-toggle {
